@@ -29,11 +29,11 @@
         margin: 0;
         padding: 0;
         width: 90%;
+        font-size: 120%;
     
         a {
             text-decoration: none;
             font-weight: bold;
-            font-size: 120%;
             text-align: center;
             color: #000000;
             display: block;
@@ -42,6 +42,7 @@
 
         &:hover {
         transform: scale(1.01);
+        font-size: 100%;
         }
         }
     }
@@ -55,6 +56,10 @@
         #barra-menu li {
         width: 70%;
         }
+
+        li {
+            font-size: 80%;
+        }
     }
     
     /* MAIN DE MI INDEX */
@@ -62,12 +67,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #9365ff;
     }
     
     .curiosidades {
         width: 70%;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
     }
     
@@ -246,5 +250,27 @@
         overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
         max-width: 100%;
         max-height: 100%;
+        width: 100%;
+    }
+
+    .fondo-magico {
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, #9365ff, #8677ff9c, #84b9ffa4);
+        animation: mágico 10s linear infinite;
     }
     
+@keyframes mágico {
+        0% {
+        background-size: 200% 200%;
+        background-position: 0% 50%;
+        }
+        50% {
+        background-size: 250% 250%;
+        background-position: 100% 50%;
+        }
+        100% {
+        background-size: 200% 200%;
+        background-position: 0% 50%;
+        }
+    }
